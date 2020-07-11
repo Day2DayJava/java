@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="com.day2dayjava.tutorials.java.interfaces.ZeroEmissionVehicle" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/ZeroEmissionVehicle.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="77" width="262" x="918" y="590"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="com.day2dayjava.tutorials.java.interfaces.TeslaCar" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/TeslaCar.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="157" width="387" x="918" y="353"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.day2dayjava.tutorials.java.interfaces.CarPoolLaneEligibilityChecker" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/CarPoolLaneEligibilityChecker.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="286" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="com.day2dayjava.tutorials.java.interfaces.LatestMakeVehicleSelector" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/LatestMakeVehicleSelector.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="392" x="743" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="com.day2dayjava.tutorials.java.interfaces.VehicleDepreciationCalculator" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/VehicleDepreciationCalculator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="156" width="336" x="367" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.day2dayjava.tutorials.java.interfaces.HondaCar" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/HondaCar.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="177" width="397" x="1345" y="353"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.day2dayjava.tutorials.java.interfaces.GroundVehicle" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/GroundVehicle.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="276" width="365" x="1782" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="8" language="java" name="com.day2dayjava.tutorials.java.interfaces.Car" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/Car.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="137" width="262" x="1345" y="590"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="9" language="java" name="com.day2dayjava.tutorials.java.interfaces.VehicleMetricsCalculationHelper" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/VehicleMetricsCalculationHelper.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="137" width="567" x="1175" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="10" language="java" name="com.day2dayjava.tutorials.java.interfaces.GenericVehicleWash" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/GenericVehicleWash.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="262" x="2791" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.day2dayjava.tutorials.java.interfaces.CarWash" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/CarWash.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="262" x="2187" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.day2dayjava.tutorials.java.interfaces.MotorcycleWash" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/MotorcycleWash.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="262" x="2489" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="13" language="java" name="com.day2dayjava.tutorials.java.interfaces.VehicleWash" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/VehicleWash.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="262" x="2626" y="353"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="14" language="java" name="com.day2dayjava.tutorials.java.interfaces.HondaMotorcycle" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/HondaMotorcycle.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="157" width="502" x="2084" y="353"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="15" language="java" name="com.day2dayjava.tutorials.java.interfaces.Vehicle" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/Vehicle.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="197" width="262" x="1782" y="353"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="16" language="java" name="com.day2dayjava.tutorials.java.interfaces.Motorcycle" 
+    project="java-interfaces-tutorial" 
+    file="/java-interfaces-tutorial/src/main/java/com/day2dayjava/tutorials/java/interfaces/Motorcycle.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="291" x="1933" y="590"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <realization id="18">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <realization id="20">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <generalization id="21">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <realization id="22">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <realization id="23">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="24">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <realization id="25">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="16"/>  
+  </realization>  
+  <realization id="26">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <realization id="28">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_VgFvMMOGEeqWbr3HOx7bfA" name="ClassDiagram">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Vpe7wMOGEeqWbr3HOx7bfA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_eTtg8MOGEeqWbr3HOx7bfA" name="java-interfaces-tutorial">
+      <packagedElement xmi:type="uml:Package" xmi:id="_eXFlEMOGEeqWbr3HOx7bfA" name="com">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eXHaQMOGEeqWbr3HOx7bfA" name="day2dayjava">
+          <packagedElement xmi:type="uml:Package" xmi:id="_eXIoYMOGEeqWbr3HOx7bfA" name="tutorials">
+            <packagedElement xmi:type="uml:Package" xmi:id="_eXJPcMOGEeqWbr3HOx7bfA" name="java">
+              <packagedElement xmi:type="uml:Package" xmi:id="_eXKdkMOGEeqWbr3HOx7bfA" name="interfaces">
+                <packagedElement xmi:type="uml:Class" xmi:id="_eXOvAMOGEeqWbr3HOx7bfA" name="GenericVehicleWash" visibility="public">
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_eXZHEMOGEeqWbr3HOx7bfA" name="GenericVehicleWash implements VehicleWash" client="_eXOvAMOGEeqWbr3HOx7bfA" supplier="_eXUOkMOGEeqWbr3HOx7bfA" contract="_eXUOkMOGEeqWbr3HOx7bfA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ecykcMOGEeqWbr3HOx7bfA" name="wash" specification="_eckiAMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    System.out.println(String.format(&quot;Your \&quot;%s\&quot; is clean now.&quot;, vehicle.getConfiguration()));&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eckiAMOGEeqWbr3HOx7bfA" name="wash" visibility="public" method="_ecykcMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ecm-QMOGEeqWbr3HOx7bfA" name="vehicle" type="_eXdYgMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_eXUOkMOGEeqWbr3HOx7bfA" name="VehicleWash" visibility="public">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_efIt0MOGEeqWbr3HOx7bfA" name="wash" visibility="private">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_efKjAMOGEeqWbr3HOx7bfA" name="vehicle" type="_eXdYgMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_eXdYgMOGEeqWbr3HOx7bfA" name="T"/>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_ec214MOGEeqWbr3HOx7bfA" name="ZeroEmissionVehicle" visibility="public"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ec7HUMOGEeqWbr3HOx7bfA" name="CarPoolLaneEligibilityChecker" visibility="public" isAbstract="true">
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_edXzQMOGEeqWbr3HOx7bfA" name="isEligible" specification="_ec-xsMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    if (vehicle instanceof ZeroEmissionVehicle) {&#xD;
+        return true;&#xD;
+    }&#xD;
+    return false;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ec-xsMOGEeqWbr3HOx7bfA" name="isEligible" visibility="public" isStatic="true" method="_edXzQMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_edUI4MOGEeqWbr3HOx7bfA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_edV-EMOGEeqWbr3HOx7bfA" name="vehicle" type="_eyPQAMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_eyPQAMOGEeqWbr3HOx7bfA" name="Vehicle" visibility="public">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eyUIgMOGEeqWbr3HOx7bfA" name="getMake" visibility="private">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eyVWoMOGEeqWbr3HOx7bfA" type="_eecxUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eyV9sMOGEeqWbr3HOx7bfA" name="getMakeYear" visibility="private">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eyXL0MOGEeqWbr3HOx7bfA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eyXy4MOGEeqWbr3HOx7bfA" name="getModel" visibility="private">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eyYZ8MOGEeqWbr3HOx7bfA" type="_eecxUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eyZBAMOGEeqWbr3HOx7bfA" name="getConfiguration" visibility="private">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eyZoEMOGEeqWbr3HOx7bfA" type="_eecxUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eyaPIMOGEeqWbr3HOx7bfA" name="getBasePrice" visibility="private">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eya2MMOGEeqWbr3HOx7bfA" type="_ediLUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eybdQMOGEeqWbr3HOx7bfA" name="turnOnEconomyMode" visibility="private"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_edd54MOGEeqWbr3HOx7bfA" name="VehicleMetricsCalculationHelper" visibility="public">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_edqHIMOGEeqWbr3HOx7bfA" name="getAvailableDrivingDistanceInMiles" visibility="public" isStatic="true">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_edsjYMOGEeqWbr3HOx7bfA" type="_ediLUMOGEeqWbr3HOx7bfA" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_edu_oMOGEeqWbr3HOx7bfA" name="vehiclesMilesPerGallon" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_edw00MOGEeqWbr3HOx7bfA" name="remainingFuelInGallons" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_edzREMOGEeqWbr3HOx7bfA" name="getAvailableDrivingDistanceInKiloMeters" visibility="public" isStatic="true">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ed2UYMOGEeqWbr3HOx7bfA" type="_ediLUMOGEeqWbr3HOx7bfA" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ed4JkMOGEeqWbr3HOx7bfA" name="vehiclesKiloMetersPerLitre" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ed6l0MOGEeqWbr3HOx7bfA" name="remainingFuelInLitres" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ed8bAMOGEeqWbr3HOx7bfA" name="getAvailableDrivingDistance" visibility="private" isStatic="true">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ed-QMMOGEeqWbr3HOx7bfA" type="_ediLUMOGEeqWbr3HOx7bfA" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ed_eUMOGEeqWbr3HOx7bfA" name="vehicesFuelAverage" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eeB6kMOGEeqWbr3HOx7bfA" name="remainingFuel" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_eeHaIMOGEeqWbr3HOx7bfA" name="HondaMotorcycle" visibility="public">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_eeJPUMOGEeqWbr3HOx7bfA" general="_eeIoQMOGEeqWbr3HOx7bfA"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_eeXRwMOGEeqWbr3HOx7bfA" name="motorCycleStyle" visibility="private" type="_epQTIMOGEeqWbr3HOx7bfA" isUnique="false">
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_eeZG8MOGEeqWbr3HOx7bfA" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>null</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_eeMSoMOGEeqWbr3HOx7bfA" name="HondaMotorcycle implements Motorcycle" client="_eeHaIMOGEeqWbr3HOx7bfA" supplier="_eeKdcMOGEeqWbr3HOx7bfA" contract="_eeKdcMOGEeqWbr3HOx7bfA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee5dQMOGEeqWbr3HOx7bfA" name="HondaMotorcycle" specification="_eeoXgMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    super(make, makeYear, model, basePrice);&#xD;
+    this.motorCycleStyle = motorCycleStyle;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ee-80MOGEeqWbr3HOx7bfA" name="getMotorCycleStyle" specification="_ee75gMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return this.motorCycleStyle;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_efFDcMOGEeqWbr3HOx7bfA" name="getConfiguration" specification="_efBZEMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return String.format(&quot;HondaMotorcycle [motorCycleStyle=%s, make=%s, makeYear=%s, model=%s]&quot;, getMotorCycleStyle(), getMake(), getMakeYear(), getModel());&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eeoXgMOGEeqWbr3HOx7bfA" name="HondaMotorcycle" visibility="protected" method="_ee5dQMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eexhcMOGEeqWbr3HOx7bfA" name="make" type="_eecxUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eezWoMOGEeqWbr3HOx7bfA" name="makeYear">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ee0kwMOGEeqWbr3HOx7bfA" name="model" type="_eecxUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ee2Z8MOGEeqWbr3HOx7bfA" name="basePrice" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ee4PIMOGEeqWbr3HOx7bfA" name="motorCycleStyle" type="_epEF4MOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZV3RcMOHEeqWbr3HOx7bfA" name="motorCycleStyle" type="_epQTIMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ee75gMOGEeqWbr3HOx7bfA" name="getMotorCycleStyle" visibility="public" method="_ee-80MOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ee9usMOGEeqWbr3HOx7bfA" type="_epQTIMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_efBZEMOGEeqWbr3HOx7bfA" name="getConfiguration" visibility="public" method="_efFDcMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_efD1UMOGEeqWbr3HOx7bfA" type="_eecxUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_eeIoQMOGEeqWbr3HOx7bfA" name="GroundVehicle" visibility="public" isAbstract="true">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_egCswMOGEeqWbr3HOx7bfA"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_egFwEMOGEeqWbr3HOx7bfA" name="make" visibility="protected" type="_eecxUMOGEeqWbr3HOx7bfA" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_egIzYMOGEeqWbr3HOx7bfA" name="makeYear" visibility="protected" isUnique="false">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_egL2sMOGEeqWbr3HOx7bfA" name="model" visibility="protected" type="_eecxUMOGEeqWbr3HOx7bfA" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_egOS8MOGEeqWbr3HOx7bfA" name="basePrice" visibility="protected" type="_ediLUMOGEeqWbr3HOx7bfA" isUnique="false"/>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ZWhYwMOHEeqWbr3HOx7bfA" name="GroundVehicle implements Vehicle" client="_eeIoQMOGEeqWbr3HOx7bfA" supplier="_eyPQAMOGEeqWbr3HOx7bfA" contract="_eyPQAMOGEeqWbr3HOx7bfA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eghN4MOGEeqWbr3HOx7bfA" name="GroundVehicle" specification="_egR9UMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    super();&#xD;
+    this.make = make;&#xD;
+    this.makeYear = makeYear;&#xD;
+    this.model = model;&#xD;
+    this.basePrice = basePrice;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_egmtcMOGEeqWbr3HOx7bfA" name="getMake" specification="_egjqIMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return this.make;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_egq-4MOGEeqWbr3HOx7bfA" name="getMakeYear" specification="_egoioMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return this.makeYear;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_egvQUMOGEeqWbr3HOx7bfA" name="getModel" specification="_egs0EMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return this.model;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_egzhwMOGEeqWbr3HOx7bfA" name="getBasePrice" specification="_egxFgMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return this.basePrice;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eg4aQMOGEeqWbr3HOx7bfA" name="getConfiguration" specification="_eg1W8MOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return String.format(&quot;GroundVehicle [make=%s, makeYear=%s, model=%s]&quot;, getMake(), getMakeYear(), getModel());&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_egR9UMOGEeqWbr3HOx7bfA" name="GroundVehicle" visibility="protected" method="_eghN4MOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_egbHQMOGEeqWbr3HOx7bfA" name="make" type="_eecxUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_egcVYMOGEeqWbr3HOx7bfA" name="makeYear">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_egeKkMOGEeqWbr3HOx7bfA" name="model" type="_eecxUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_egf_wMOGEeqWbr3HOx7bfA" name="basePrice" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_egjqIMOGEeqWbr3HOx7bfA" name="getMake" visibility="public" method="_egmtcMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eglfUMOGEeqWbr3HOx7bfA" type="_eecxUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_egoioMOGEeqWbr3HOx7bfA" name="getMakeYear" visibility="public" method="_egq-4MOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_egpwwMOGEeqWbr3HOx7bfA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_egs0EMOGEeqWbr3HOx7bfA" name="getModel" visibility="public" method="_egvQUMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eguCMMOGEeqWbr3HOx7bfA" type="_eecxUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_egxFgMOGEeqWbr3HOx7bfA" name="getBasePrice" visibility="public" method="_egzhwMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_egyToMOGEeqWbr3HOx7bfA" type="_ediLUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eg1W8MOGEeqWbr3HOx7bfA" name="getConfiguration" visibility="public" method="_eg4aQMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eg3MIMOGEeqWbr3HOx7bfA" type="_eecxUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_eeKdcMOGEeqWbr3HOx7bfA" name="Motorcycle" visibility="public">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_ehk90MOGEeqWbr3HOx7bfA"/>
+                  <generalization xmi:type="uml:Generalization" xmi:id="_ZW-rwMOHEeqWbr3HOx7bfA" general="_eyPQAMOGEeqWbr3HOx7bfA"/>
+                  <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_epEF4MOGEeqWbr3HOx7bfA" name="MotorCycleStyle" visibility="public">
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_epKzkMOGEeqWbr3HOx7bfA" name="STANDARD"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_epLaoMOGEeqWbr3HOx7bfA" name="CRUISER"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_epMowMOGEeqWbr3HOx7bfA" name="SPORT_BIKE"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_epNP0MOGEeqWbr3HOx7bfA" name="SCOOTER"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_epN24MOGEeqWbr3HOx7bfA" name="OFF_ROAD"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_epPFAMOGEeqWbr3HOx7bfA" name="TOURING"/>
+                  </nestedClassifier>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_epPsEMOGEeqWbr3HOx7bfA" name="getMotorCycleStyle" visibility="private">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_epXn4MOGEeqWbr3HOx7bfA" type="_epQTIMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_efPbgMOGEeqWbr3HOx7bfA" name="TeslaCar" visibility="public">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_efQpoMOGEeqWbr3HOx7bfA" general="_eeIoQMOGEeqWbr3HOx7bfA"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_efcP0MOGEeqWbr3HOx7bfA" name="carStyle" visibility="private" type="_euexYMOGEeqWbr3HOx7bfA" isUnique="false">
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_efeFAMOGEeqWbr3HOx7bfA" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>null</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_efTF4MOGEeqWbr3HOx7bfA" name="TeslaCar implements Car" client="_efPbgMOGEeqWbr3HOx7bfA" supplier="_efR3wMOGEeqWbr3HOx7bfA" contract="_efR3wMOGEeqWbr3HOx7bfA"/>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_efUUAMOGEeqWbr3HOx7bfA" name="TeslaCar implements ZeroEmissionVehicle" client="_efPbgMOGEeqWbr3HOx7bfA" supplier="_ec214MOGEeqWbr3HOx7bfA" contract="_ec214MOGEeqWbr3HOx7bfA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_efxnAMOGEeqWbr3HOx7bfA" name="TeslaCar" specification="_efghQMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    super(make, makeYear, model, basePrice);&#xD;
+    this.carStyle = carStyle;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ef3GkMOGEeqWbr3HOx7bfA" name="getCarStyle" specification="_ef0DQMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return this.carStyle;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ef8mIMOGEeqWbr3HOx7bfA" name="getConfiguration" specification="_ef47wMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return String.format(&quot;TeslaCar [carStyle=%s, make=%s, makeYear=%s, model=%s]&quot;, getCarStyle(), getMake(), getMakeYear(), getModel());&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_efghQMOGEeqWbr3HOx7bfA" name="TeslaCar" visibility="protected" method="_efxnAMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_efpEIMOGEeqWbr3HOx7bfA" name="make" type="_eecxUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_efqSQMOGEeqWbr3HOx7bfA" name="makeYear">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_efsHcMOGEeqWbr3HOx7bfA" name="model" type="_eecxUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eft8oMOGEeqWbr3HOx7bfA" name="basePrice" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_efvx0MOGEeqWbr3HOx7bfA" name="carStyle" type="_euTyQMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZWb5MMOHEeqWbr3HOx7bfA" name="carStyle" type="_euexYMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ef0DQMOGEeqWbr3HOx7bfA" name="getCarStyle" visibility="public" method="_ef3GkMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ef14cMOGEeqWbr3HOx7bfA" type="_euexYMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ef47wMOGEeqWbr3HOx7bfA" name="getConfiguration" visibility="public" method="_ef8mIMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ef6w8MOGEeqWbr3HOx7bfA" type="_eecxUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_efR3wMOGEeqWbr3HOx7bfA" name="Car" visibility="public">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_eqGAoMOGEeqWbr3HOx7bfA"/>
+                  <generalization xmi:type="uml:Generalization" xmi:id="_ZXY7cMOHEeqWbr3HOx7bfA" general="_eyPQAMOGEeqWbr3HOx7bfA"/>
+                  <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_euTyQMOGEeqWbr3HOx7bfA" name="CarStyle" visibility="public">
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_euWOgMOGEeqWbr3HOx7bfA" name="COUPE"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_euW1kMOGEeqWbr3HOx7bfA" name="CONVERTIBLE"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_euYDsMOGEeqWbr3HOx7bfA" name="SEDAN"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_euYqwMOGEeqWbr3HOx7bfA" name="WAGON"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_euYqwcOGEeqWbr3HOx7bfA" name="HATCHBACK"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_euZR0MOGEeqWbr3HOx7bfA" name="SUV"/>
+                  </nestedClassifier>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_euaf8MOGEeqWbr3HOx7bfA" name="MIN_DOORS" visibility="private" isUnique="false">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_eubHAMOGEeqWbr3HOx7bfA" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>1</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_eucVIMOGEeqWbr3HOx7bfA" name="MAX_DOORS" visibility="private" isUnique="false">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_eudjQMOGEeqWbr3HOx7bfA" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>5</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eueKUMOGEeqWbr3HOx7bfA" name="getCarStyle" visibility="private">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_euibwMOGEeqWbr3HOx7bfA" type="_euexYMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_eg8rsMOGEeqWbr3HOx7bfA" name="HondaCar" visibility="public">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_eg950MOGEeqWbr3HOx7bfA" general="_eeIoQMOGEeqWbr3HOx7bfA"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_eg_vAMOGEeqWbr3HOx7bfA" name="carStyle" visibility="private" type="_euexYMOGEeqWbr3HOx7bfA" isUnique="false">
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ehBkMMOGEeqWbr3HOx7bfA" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>null</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_eg-g4MOGEeqWbr3HOx7bfA" name="HondaCar implements Car" client="_eg8rsMOGEeqWbr3HOx7bfA" supplier="_efR3wMOGEeqWbr3HOx7bfA" contract="_efR3wMOGEeqWbr3HOx7bfA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ehTRAMOGEeqWbr3HOx7bfA" name="HondaCar" specification="_ehEAcMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    super(make, makeYear, model, basePrice);&#xD;
+    this.carStyle = carStyle;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ehYwkMOGEeqWbr3HOx7bfA" name="getCarStyle" specification="_ehVtQMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return this.carStyle;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ehdpEMOGEeqWbr3HOx7bfA" name="getConfiguration" specification="_ehalwMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    return String.format(&quot;HondaCar [carStyle=%s, make=%s, makeYear=%s, model=%s]&quot;, getCarStyle(), getMake(), getMakeYear(), getModel());&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ehgsYMOGEeqWbr3HOx7bfA" name="turnOnEconomyMode" specification="_ehfeQMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    System.out.print(&quot;Economy mode is on now.&quot;);&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ehEAcMOGEeqWbr3HOx7bfA" name="HondaCar" visibility="protected" method="_ehTRAMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ehMjUMOGEeqWbr3HOx7bfA" name="make" type="_eecxUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ehNxcMOGEeqWbr3HOx7bfA" name="makeYear">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ehO_kMOGEeqWbr3HOx7bfA" name="model" type="_eecxUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ehQ0wMOGEeqWbr3HOx7bfA" name="basePrice" type="_ediLUMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ehSp8MOGEeqWbr3HOx7bfA" name="carStyle" type="_euTyQMOGEeqWbr3HOx7bfA"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZW5MMMOHEeqWbr3HOx7bfA" name="carStyle" type="_euexYMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ehVtQMOGEeqWbr3HOx7bfA" name="getCarStyle" visibility="public" method="_ehYwkMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ehXicMOGEeqWbr3HOx7bfA" type="_euexYMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ehalwMOGEeqWbr3HOx7bfA" name="getConfiguration" visibility="public" method="_ehdpEMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ehca8MOGEeqWbr3HOx7bfA" type="_eecxUMOGEeqWbr3HOx7bfA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ehfeQMOGEeqWbr3HOx7bfA" name="turnOnEconomyMode" visibility="public" method="_ehgsYMOGEeqWbr3HOx7bfA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_epQTIMOGEeqWbr3HOx7bfA" name="MotorCycleStyle"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_epbSQMOGEeqWbr3HOx7bfA" name="CarWash" visibility="public">
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_epb5UMOGEeqWbr3HOx7bfA" name="CarWash implements VehicleWash" client="_epbSQMOGEeqWbr3HOx7bfA" supplier="_eXUOkMOGEeqWbr3HOx7bfA" contract="_eXUOkMOGEeqWbr3HOx7bfA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_epgKwMOGEeqWbr3HOx7bfA" name="wash" specification="_epdHcMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    System.out.println(String.format(&quot;Your car \&quot;%s\&quot; is clean now.&quot;, car.getConfiguration()));&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_epdHcMOGEeqWbr3HOx7bfA" name="wash" visibility="public" method="_epgKwMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_epe8oMOGEeqWbr3HOx7bfA" name="car" type="_efR3wMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_epjOEMOGEeqWbr3HOx7bfA" name="MotorcycleWash" visibility="public">
+                  <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_epkcMMOGEeqWbr3HOx7bfA" name="MotorcycleWash implements VehicleWash" client="_epjOEMOGEeqWbr3HOx7bfA" supplier="_eXUOkMOGEeqWbr3HOx7bfA" contract="_eXUOkMOGEeqWbr3HOx7bfA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_epoGkMOGEeqWbr3HOx7bfA" name="wash" specification="_eplqUMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    System.out.println(String.format(&quot;Your motorcycle \&quot;%s\&quot; is clean now.&quot;, motorcycle.getConfiguration()));&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eplqUMOGEeqWbr3HOx7bfA" name="wash" visibility="public" method="_epoGkMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_epm4cMOGEeqWbr3HOx7bfA" name="motorcycle" type="_eeKdcMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_epsYAMOGEeqWbr3HOx7bfA" name="LatestMakeVehicleSelector" visibility="public">
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eptmIMOGEeqWbr3HOx7bfA" name="getLatestMakeVehicles" visibility="private" isStatic="true">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_epuNMMOGEeqWbr3HOx7bfA" type="_eyPQAMOGEeqWbr3HOx7bfA" direction="return">
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_epvbUMOGEeqWbr3HOx7bfA"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_epwCYMOGEeqWbr3HOx7bfA" value="*"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_epxQgMOGEeqWbr3HOx7bfA" name="vehicles">
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_epx3kMOGEeqWbr3HOx7bfA"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_epyeoMOGEeqWbr3HOx7bfA" value="*"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZXKR8MOHEeqWbr3HOx7bfA" name="vehicles" type="_eyPQAMOGEeqWbr3HOx7bfA">
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZXLgEMOHEeqWbr3HOx7bfA"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZXMHIMOHEeqWbr3HOx7bfA" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ep2wEMOGEeqWbr3HOx7bfA" name="VehicleDepreciationCalculator" visibility="public" isAbstract="true">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_ep3-MMOGEeqWbr3HOx7bfA" name="DEPRECIATION_EVERY_YEAR" visibility="private" isLeaf="true" isStatic="true" isUnique="false">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ep6acMOGEeqWbr3HOx7bfA" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>500</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ep_S8MOGEeqWbr3HOx7bfA" name="getCurrentVehicleValue" specification="_ep7okMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    BigDecimal vehicleAge = getVehicleAge(vehicle);&#xD;
+    BigDecimal depreciationEveryYear = new BigDecimal(DEPRECIATION_EVERY_YEAR);&#xD;
+    BigDecimal vehicleBasePrice = vehicle.getBasePrice();&#xD;
+    BigDecimal currentVehicleValue = vehicleBasePrice.subtract(vehicleAge.multiply(depreciationEveryYear));&#xD;
+    BigDecimal zeroValue = BigDecimal.valueOf(0);&#xD;
+    return currentVehicleValue.compareTo(zeroValue) > 0 ? currentVehicleValue : zeroValue;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eqDkYMOGEeqWbr3HOx7bfA" name="getVehicleAge" specification="_eqAhEMOGEeqWbr3HOx7bfA">
+                    <language>JAVA</language>
+                    <body>&#xD;
+    BigDecimal vehicleAge = BigDecimal.valueOf(LocalDate.now().getYear() - vehicle.getMakeYear());&#xD;
+    return vehicleAge;&#xD;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ep7okMOGEeqWbr3HOx7bfA" name="getCurrentVehicleValue" visibility="public" isLeaf="true" isStatic="true" method="_ep_S8MOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ep9dwMOGEeqWbr3HOx7bfA" type="_ediLUMOGEeqWbr3HOx7bfA" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ep-E0MOGEeqWbr3HOx7bfA" name="vehicle"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZXUC8MOHEeqWbr3HOx7bfA" name="vehicle" type="_eyPQAMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_eqAhEMOGEeqWbr3HOx7bfA" name="getVehicleAge" visibility="private" isStatic="true" method="_eqDkYMOGEeqWbr3HOx7bfA">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eqBvMMOGEeqWbr3HOx7bfA" type="_ediLUMOGEeqWbr3HOx7bfA" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_eqC9UMOGEeqWbr3HOx7bfA" name="vehicle"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZXWfMMOHEeqWbr3HOx7bfA" name="vehicle" type="_eyPQAMOGEeqWbr3HOx7bfA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_euexYMOGEeqWbr3HOx7bfA" name="CarStyle"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_edfvEMOGEeqWbr3HOx7bfA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_edg9MMOGEeqWbr3HOx7bfA" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_edhkQMOGEeqWbr3HOx7bfA" name="math">
+          <packagedElement xmi:type="uml:Class" xmi:id="_ediLUMOGEeqWbr3HOx7bfA" name="BigDecimal"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_eebjMMOGEeqWbr3HOx7bfA" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_eecxUMOGEeqWbr3HOx7bfA" name="String"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eVr24MOGEeqWbr3HOx7bfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eVuTIMOGEeqWbr3HOx7bfA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eWXMUMOGEeqWbr3HOx7bfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eWYacMOGEeqWbr3HOx7bfA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eWlOwMOGEeqWbr3HOx7bfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eWmc4MOGEeqWbr3HOx7bfA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <PapyrusJava:External xmi:id="_ecgQkMOGEeqWbr3HOx7bfA" name="T" base_Classifier="_eXdYgMOGEeqWbr3HOx7bfA"/>
+  <PapyrusJava:External xmi:id="_ednD0MOGEeqWbr3HOx7bfA" name="java.math.BigDecimal" base_Classifier="_ediLUMOGEeqWbr3HOx7bfA"/>
+  <PapyrusJava:External xmi:id="_eeUOcMOGEeqWbr3HOx7bfA" name="MotorCycleStyle" base_Classifier="_epEF4MOGEeqWbr3HOx7bfA"/>
+  <PapyrusJava:External xmi:id="_eekGEMOGEeqWbr3HOx7bfA" name="java.lang.String" base_Classifier="_eecxUMOGEeqWbr3HOx7bfA"/>
+  <standard:Create xmi:id="_eeueIMOGEeqWbr3HOx7bfA" base_BehavioralFeature="_eeoXgMOGEeqWbr3HOx7bfA"/>
+  <PapyrusJava:External xmi:id="_efZzkMOGEeqWbr3HOx7bfA" name="CarStyle" base_Classifier="_euTyQMOGEeqWbr3HOx7bfA"/>
+  <standard:Create xmi:id="_efmA0MOGEeqWbr3HOx7bfA" base_BehavioralFeature="_efghQMOGEeqWbr3HOx7bfA"/>
+  <standard:Create xmi:id="_egW10MOGEeqWbr3HOx7bfA" base_BehavioralFeature="_egR9UMOGEeqWbr3HOx7bfA"/>
+  <standard:Create xmi:id="_ehJgAMOGEeqWbr3HOx7bfA" base_BehavioralFeature="_ehEAcMOGEeqWbr3HOx7bfA"/>
+  <PapyrusJava:External xmi:id="_epTWcMOGEeqWbr3HOx7bfA" name="MotorCycleStyle" base_Classifier="_epQTIMOGEeqWbr3HOx7bfA"/>
+  <PapyrusJava:External xmi:id="_eugmkMOGEeqWbr3HOx7bfA" name="CarStyle" base_Classifier="_euexYMOGEeqWbr3HOx7bfA"/>
+  <PapyrusJava:External xmi:id="_ffVxIMOHEeqWbr3HOx7bfA" name="Vehicle" base_Classifier="_eyPQAMOGEeqWbr3HOx7bfA"/>
+</xmi:XMI>
