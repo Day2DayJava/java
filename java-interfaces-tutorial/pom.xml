@@ -10,7 +10,7 @@
 
   <name>java-interfaces-tutorial</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://www.day2dayjava.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -99,4 +99,9 @@
       </plugins>
     </pluginManagement>
   </build>
+  <organization>
+  	<name>Day2DayJava</name>
+  	<url>https://www.day2dayjava.com</url>
+  </organization>
+  <description>Sample classes to learn about Java Interfaces.</description>
 </project>
