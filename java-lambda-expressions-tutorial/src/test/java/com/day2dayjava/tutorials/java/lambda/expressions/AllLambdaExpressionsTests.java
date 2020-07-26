@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SelectClasses({ LambdaExpressionsWithNoArgumentTests.class, LambdaExpressionsWithOneArgumentTests.class,
-		LambdaExpressionsWithTwoArgumentsTests.class,
+		LambdaExpressionsWithTwoArgumentsTests.class, LambdaExpressionScopeTest.class,
 		LambdaExpressionsWithTwoArgumentsExplicitTypeSpecificationTest.class })
 public class AllLambdaExpressionsTests {
 

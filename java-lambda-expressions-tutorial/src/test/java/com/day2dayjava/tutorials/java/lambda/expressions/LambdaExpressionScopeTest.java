@@ -4,8 +4,6 @@
 package com.day2dayjava.tutorials.java.lambda.expressions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.doCallRealMethod;
-import static org.mockito.Mockito.verify;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -14,8 +12,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 /**
@@ -31,9 +27,6 @@ class LambdaExpressionScopeTest {
 
 	private final ByteArrayOutputStream outputContent = new ByteArrayOutputStream();
 	private final PrintStream originalOutputStream = System.out;
-
-	@Mock
-	private OneToTenTablePrinter oneToTenTablePrinter;
 
 	/**
 	 * By default System.out writes to the console, set the output stream to our own output stream. 
@@ -53,14 +46,20 @@ class LambdaExpressionScopeTest {
 	}
 
 	/**
-	 * Test method for {@link com.day2dayjava.tutorials.java.lambda.expressions.OneToTenTablePrinter#printTable(int)}.
+	 * Test method for {@link com.day2dayjava.tutorials.java.lambda.expressions.OneToTenTablePrinter#printTable()}.
 	 */
 	@Test
 	final void testPrintTable() {
-		doCallRealMethod().when(oneToTenTablePrinter).printTable(Mockito.anyInt());
-		oneToTenTablePrinter.printTable(2);
-		verify(oneToTenTablePrinter).printTable(2);
-		assertEquals("2 4 6 8 10 12 14 16 18 20 ", originalOutputStream.toString());
+		int inputNumber = 2;
+		//inputNumber = 6;
+		OneToTenTablePrinter tablePrinter = () -> {
+			//int inputNumber = 8;
+			for (int i = 1; i <= 10; i++) {
+				System.out.print((inputNumber * i) + " ");
+			}
+		};
+		tablePrinter.printTable();
+		assertEquals("2 4 6 8 10 12 14 16 18 20 ", outputContent.toString());
 	}
 
 }
